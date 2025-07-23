@@ -25,6 +25,7 @@ the name of your script
 
 # git init
 # git status
+git remote -v
 
 # stage and commit the file (change)
 # git add main.py
