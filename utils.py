@@ -3,7 +3,7 @@ from pathlib import Path
 import os, shutil
 
 
-def organize_by_ext(folder_path: str, dry_run=False):
+def organize_by_extension(folder_path: str, dry_run=False):
     """
     Organize files in the given folder into sub-folder based on file extension
 
@@ -24,7 +24,7 @@ def organize_by_ext(folder_path: str, dry_run=False):
             # Move the file from its current location to the 'target' folder,
             # keeping the same filename. Convert Path objects to strings because shutil.move expects strings.
 
-def organsize_by_date(folder_path: str, dry_run=False):
+def organize_by_date(folder_path: str, dry_run=False):
     """
     Organize files in the given folder based on file creation date
 
@@ -43,7 +43,7 @@ def organsize_by_date(folder_path: str, dry_run=False):
                 print(f"[DRY-RUN] Would move {file.name} -> {target / file.name}")
             else:
                 target.mkdir(exist_ok=True)
-                shutil.move(str(file), date_str / str(file.name)) #Must include the filename, not just the target folder
+                shutil.move(str(file), str(date_str / file.name)) #Must include the filename, not just the target folder
 
             
 

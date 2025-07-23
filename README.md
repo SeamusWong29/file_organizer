@@ -1,5 +1,8 @@
 # File Sorter
-A Python script that organizes files in a folder by extension or creation date.
+A Python script that organizes files in a folder by:
+
+- File extension ('--mode ext')
+- Creation date ('--mode date')
 
 ## Features
 - Sort files by extension or date
@@ -20,6 +23,19 @@ the name of your script
 
 
 
+
+
+
+
+
+
+
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin https://github.com/YOUR_USERNAME/file_organizer.git
+git push -u origin master
+# later push and pull no need so long 
 
 
 

@@ -10,10 +10,10 @@ def main():
     ap.add_argument("--dry-run", action="store_true", help="Print actions without making changes")
     args = ap.parse_args()
 
-    if not os.path.exist(args.path):
+    if not os.path.exists(args.path):
         print(f"Error: Path '{args.path}' does not exist.")
         sys.exit(1)
-    if not os.access(args.path, os.R_OK, os.W_OK):
+    if not os.access(args.path, os.R_OK | os.W_OK):
         print(f"Error: No read/write permission for {args.path}")
         sys.exit(1)
 
