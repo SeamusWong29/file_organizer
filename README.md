@@ -1,13 +1,12 @@
-# 📁 File Sorter
-
+# File Sorter
 A Python script that organizes files in a folder by extension or creation date.
 
-## 🔧 Features
+## Features
 - Sort files by extension or date
 - Custom config via JSON
 - Logs operations with timestamps
 
-## 📦 Installation
+## Installation
 ```bash
 git clone https://github.com/yourname/file-sorter.git
 cd file-sorter    # Enter the downloaded project folder
